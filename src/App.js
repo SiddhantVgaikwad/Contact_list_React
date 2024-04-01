@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import AddContact from "./components/AddContact";
 import EditContact from "./components/EditContact";
 import { useDispatch } from "react-redux";
+import Go from "./components/Go";
 
 const App = () => {
     const dispatch = useDispatch();
@@ -36,8 +37,8 @@ const App = () => {
             <ToastContainer />
             <Navbar />
             <Routes>
+                <Route path="/Contact_list_React/" element={Go}></Route>
                 <Route exact path="/" element={<Home />}>
-
                 </Route>
                 <Route path="/add" element={<AddContact />}>
 
